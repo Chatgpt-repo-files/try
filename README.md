@@ -28,4 +28,6 @@ backend/
   package.json
 ```
 
-Open your browser at `http://localhost:3000` and start playing!
+Open your browser at `http://localhost:3000` and start playing! **The game must be
+served from the Express server**; opening `index.html` directly will not load the
+game logic.

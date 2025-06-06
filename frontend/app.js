@@ -1,25 +1,44 @@
-const mainMenu = document.getElementById('main-menu');
-const countryView = document.getElementById('country-view');
-const cityView = document.getElementById('city-view');
-const districtView = document.getElementById('district-view');
-const gameView = document.getElementById('game-view');
-const helpOverlay = document.getElementById('help-overlay');
+let mainMenu,
+    countryView,
+    cityView,
+    districtView,
+    gameView,
+    helpOverlay;
 
 let currentCountry = null;
 let currentCity = null;
 let currentDistrict = null;
 
 function showView(view) {
-  [mainMenu, countryView, cityView, districtView, gameView].forEach(v => v.classList.add('hidden'));
+  [mainMenu, countryView, cityView, districtView, gameView].forEach(v =>
+    v.classList.add('hidden')
+  );
   view.classList.remove('hidden');
 }
 
-// Main Menu Buttons
-document.getElementById('start-btn').addEventListener('click', loadCountries);
-document.getElementById('help-btn').addEventListener('click', () => helpOverlay.classList.remove('hidden'));
-document.getElementById('close-help').addEventListener('click', () => helpOverlay.classList.add('hidden'));
+function init() {
+  mainMenu = document.getElementById('main-menu');
+  countryView = document.getElementById('country-view');
+  cityView = document.getElementById('city-view');
+  districtView = document.getElementById('district-view');
+  gameView = document.getElementById('game-view');
+  helpOverlay = document.getElementById('help-overlay');
 
-document.getElementById('settings-btn').addEventListener('click', () => alert('Settings coming soon!'));
+  document
+    .getElementById('start-btn')
+    .addEventListener('click', loadCountries);
+  document
+    .getElementById('help-btn')
+    .addEventListener('click', () => helpOverlay.classList.remove('hidden'));
+  document
+    .getElementById('close-help')
+    .addEventListener('click', () => helpOverlay.classList.add('hidden'));
+  document
+    .getElementById('settings-btn')
+    .addEventListener('click', () => alert('Settings coming soon!'));
+}
+
+document.addEventListener('DOMContentLoaded', init);
 
 function loadCountries() {
   fetch('/api/countries')
