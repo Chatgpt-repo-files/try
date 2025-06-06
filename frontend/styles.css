@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f8ff;
+}
+.view {
+  margin-top: 50px;
+}
+.hidden {
+  display: none;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 1rem;
+}
+.country, .city, .district {
+  display: inline-block;
+  padding: 20px;
+  margin: 10px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  background-color: #b0e57c;
+  cursor: pointer;
+}
+.locked {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+.shake {
+  animation: shake 0.5s;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  20% { transform: translate(-1px, -2px) rotate(-1deg); }
+  40% { transform: translate(-3px, 0px) rotate(1deg); }
+  60% { transform: translate(3px, 2px) rotate(0deg); }
+  80% { transform: translate(1px, -1px) rotate(1deg); }
+  100% { transform: translate(-1px, 2px) rotate(-1deg); }
+}
