@@ -87,6 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
     countries.forEach(c => {
       const btn = document.createElement('button');
       btn.textContent = c.name;
+      btn.className = 'country';
       if (!c.unlocked) {
         btn.classList.add('locked');
       } else {
@@ -106,6 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
     cities.forEach(c => {
       const btn = document.createElement('button');
       btn.textContent = c.name;
+      btn.className = 'city';
       if (!c.unlocked) {
         btn.classList.add('locked');
       } else {
@@ -126,6 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
     districts.forEach(d => {
       const btn = document.createElement('button');
       btn.textContent = d.name;
+      btn.className = 'district';
       if (!d.unlocked) {
         btn.classList.add('locked');
       } else {
