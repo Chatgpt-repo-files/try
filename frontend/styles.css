@@ -4,7 +4,7 @@ body {
   background-color: #f0f8ff;
 }
 .view {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 .hidden {
   display: none;
@@ -20,6 +20,11 @@ body {
   justify-content: center;
   align-items: center;
   color: #fff;
+}
+.map {
+  height: 300px;
+  width: 100%;
+  margin: 10px 0;
 }
 button {
   padding: 10px 20px;
@@ -49,4 +54,8 @@ button {
   60% { transform: translate(3px, 2px) rotate(0deg); }
   80% { transform: translate(1px, -1px) rotate(1deg); }
   100% { transform: translate(-1px, 2px) rotate(-1deg); }
+}
+.answer-container button {
+  display: inline-block;
+  margin: 5px;
 }
