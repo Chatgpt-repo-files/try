@@ -2,65 +2,49 @@
   "countries": [
     {
       "id": 1,
-      "name": "AlphaLand",
-      "description": "Welcome to AlphaLand!",
+      "name": "Calculus Country",
+      "description": "Discover the world of calculus.",
+      "lat": 48.8566,
+      "lng": 2.3522,
       "unlocked": true
     },
     {
       "id": 2,
-      "name": "BetaLand",
-      "description": "Welcome to BetaLand!",
+      "name": "Statistics Country",
+      "description": "Explore statistics fundamentals.",
+      "lat": 51.5074,
+      "lng": -0.1278,
+      "unlocked": false
+    },
+    {
+      "id": 3,
+      "name": "Machine Learning Land",
+      "description": "Journey into machine learning.",
+      "lat": 37.7749,
+      "lng": -122.4194,
       "unlocked": false
     }
   ],
   "cities": [
-    {
-      "id": 1,
-      "countryId": 1,
-      "name": "Alphaville",
-      "unlocked": true
-    },
-    {
-      "id": 2,
-      "countryId": 1,
-      "name": "Numeria",
-      "unlocked": false
-    },
-    {
-      "id": 3,
-      "countryId": 2,
-      "name": "Betatown",
-      "unlocked": false
-    }
+    {"id": 1, "countryId": 1, "name": "Limits City", "unlocked": true},
+    {"id": 2, "countryId": 1, "name": "Derivatives City", "unlocked": false},
+    {"id": 3, "countryId": 2, "name": "Descriptive City", "unlocked": false},
+    {"id": 4, "countryId": 2, "name": "Probability City", "unlocked": false},
+    {"id": 5, "countryId": 3, "name": "Supervised City", "unlocked": false},
+    {"id": 6, "countryId": 3, "name": "Neural Net City", "unlocked": false}
   ],
   "districts": [
-    {
-      "id": 1,
-      "cityId": 1,
-      "name": "Harbor",
-      "concept": "Count the boats",
-      "unlocked": true
-    },
-    {
-      "id": 2,
-      "cityId": 1,
-      "name": "Market",
-      "concept": "Count the apples",
-      "unlocked": false
-    },
-    {
-      "id": 3,
-      "cityId": 2,
-      "name": "Square",
-      "concept": "Count the cars",
-      "unlocked": false
-    },
-    {
-      "id": 4,
-      "cityId": 3,
-      "name": "Center",
-      "concept": "Count the houses",
-      "unlocked": false
-    }
+    {"id": 1, "cityId": 1, "name": "Intro to Limits", "concept": "limits", "question": "What is lim_{x->0} x?", "options": ["0", "1", "Infinity"], "answer": 0, "unlocked": true},
+    {"id": 2, "cityId": 1, "name": "Continuity District", "concept": "continuity", "question": "A function is continuous if it has no...", "options": ["Gaps", "Values", "Slopes"], "answer": 0, "unlocked": false},
+    {"id": 3, "cityId": 2, "name": "Intro to Derivatives", "concept": "derivatives", "question": "The derivative measures rate of...", "options": ["Change", "Distance", "Volume"], "answer": 0, "unlocked": false},
+    {"id": 4, "cityId": 2, "name": "Chain Rule", "concept": "chainrule", "question": "The chain rule is used for...", "options": ["Composite functions", "Integrals", "Matrices"], "answer": 0, "unlocked": false},
+    {"id": 5, "cityId": 3, "name": "Mean & Median", "concept": "meanmedian", "question": "The mean of [2,4] is...", "options": ["3", "2", "4"], "answer": 0, "unlocked": false},
+    {"id": 6, "cityId": 3, "name": "Variance", "concept": "variance", "question": "Variance measures...", "options": ["Spread", "Sum", "Product"], "answer": 0, "unlocked": false},
+    {"id": 7, "cityId": 4, "name": "Basic Probability", "concept": "probability", "question": "Probability ranges from 0 to...", "options": ["1", "100", "10"], "answer": 0, "unlocked": false},
+    {"id": 8, "cityId": 4, "name": "Distributions", "concept": "distributions", "question": "Normal distribution is often called...", "options": ["Gaussian", "Poisson", "Uniform"], "answer": 0, "unlocked": false},
+    {"id": 9, "cityId": 5, "name": "Regression", "concept": "regression", "question": "Linear regression fits a...", "options": ["Line", "Circle", "Cube"], "answer": 0, "unlocked": false},
+    {"id": 10, "cityId": 5, "name": "Classification", "concept": "classification", "question": "Classification predicts...", "options": ["Categories", "Numbers", "Pixels"], "answer": 0, "unlocked": false},
+    {"id": 11, "cityId": 6, "name": "Neural Basics", "concept": "neuralbasics", "question": "A perceptron is a type of...", "options": ["Neuron", "Matrix", "Graph"], "answer": 0, "unlocked": false},
+    {"id": 12, "cityId": 6, "name": "Backpropagation", "concept": "backpropagation", "question": "Backpropagation computes...", "options": ["Gradients", "Images", "Sequences"], "answer": 0, "unlocked": false}
   ]
 }

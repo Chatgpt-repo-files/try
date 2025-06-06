@@ -3,27 +3,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Counting Concepts Game</title>
+  <title>AI Learning Adventure</title>
   <link rel="stylesheet" href="styles.css" />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-sA+e2t7jKQw+y7E2kRfIzoAnhf3I1PvTLDG2jTD6lzM="
+    crossorigin=""
+  />
 </head>
 <body>
   <div id="main-menu" class="view">
-    <h1>Counting Adventure</h1>
-    <button id="start-btn">Start Game</button>
-    <button id="help-btn">Help</button>
-    <button id="settings-btn">Settings</button>
+    <h1>AI Adventure</h1>
+    <p>Travel the world and learn AI basics.</p>
+    <button id="start-btn">Start Journey</button>
+    <button id="help-btn">How to Play</button>
   </div>
 
   <div id="help-overlay" class="overlay hidden">
-    <p>Select a district and answer the counting question!</p>
-    <button id="close-help">Close</button>
+    <div class="help-content">
+      <h2>How to Play</h2>
+      <p>Select a course on the map, then pick a unit and answer the question to unlock the next topic.</p>
+      <button id="close-help">Close</button>
+    </div>
   </div>
 
-  <div id="country-view" class="view hidden"></div>
-  <div id="city-view" class="view hidden"></div>
-  <div id="district-view" class="view hidden"></div>
-  <div id="game-view" class="view hidden"></div>
+  <div id="country-view" class="view hidden">
+    <h2>Choose a Course</h2>
+    <div id="map" class="map"></div>
+    <div id="countries-list"></div>
+    <button id="country-back">Back</button>
+  </div>
 
+  <div id="city-view" class="view hidden">
+    <h2>Choose a Unit</h2>
+    <div id="cities-container"></div>
+    <button id="city-back">Back to Courses</button>
+  </div>
+
+  <div id="district-view" class="view hidden">
+    <h2>Choose a Topic</h2>
+    <div id="districts-container"></div>
+    <button id="district-back">Back to Units</button>
+  </div>
+
+  <div id="game-view" class="view hidden">
+    <h2 id="game-question"></h2>
+    <div id="answer-buttons" class="answer-container"></div>
+    <button id="game-back">Back to Topics</button>
+  </div>
+
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-o9N1j7kPANZ8WuoLz1gmbNqjduGrE0xRHXQoNfjihMw="
+    crossorigin=""
+  ></script>
   <script src="app.js"></script>
 </body>
 </html>
