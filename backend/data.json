@@ -1,0 +1,66 @@
+{
+  "countries": [
+    {
+      "id": 1,
+      "name": "AlphaLand",
+      "description": "Welcome to AlphaLand!",
+      "unlocked": true
+    },
+    {
+      "id": 2,
+      "name": "BetaLand",
+      "description": "Welcome to BetaLand!",
+      "unlocked": false
+    }
+  ],
+  "cities": [
+    {
+      "id": 1,
+      "countryId": 1,
+      "name": "Alphaville",
+      "unlocked": true
+    },
+    {
+      "id": 2,
+      "countryId": 1,
+      "name": "Numeria",
+      "unlocked": false
+    },
+    {
+      "id": 3,
+      "countryId": 2,
+      "name": "Betatown",
+      "unlocked": false
+    }
+  ],
+  "districts": [
+    {
+      "id": 1,
+      "cityId": 1,
+      "name": "Harbor",
+      "concept": "Count the boats",
+      "unlocked": true
+    },
+    {
+      "id": 2,
+      "cityId": 1,
+      "name": "Market",
+      "concept": "Count the apples",
+      "unlocked": false
+    },
+    {
+      "id": 3,
+      "cityId": 2,
+      "name": "Square",
+      "concept": "Count the cars",
+      "unlocked": false
+    },
+    {
+      "id": 4,
+      "cityId": 3,
+      "name": "Center",
+      "concept": "Count the houses",
+      "unlocked": false
+    }
+  ]
+}
