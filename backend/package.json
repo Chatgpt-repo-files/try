@@ -1,9 +1,9 @@
 {
-  "name": "counting-game-server",
+  "name": "peerpay-server",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "payments.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node payments.js"
   },
   "dependencies": {
     "express": "^4.18.2",
